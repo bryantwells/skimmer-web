@@ -28,13 +28,15 @@
 		</thead>
 		<tbody>
 			{#each data as entry }
+				{@const firstName = entry['Cardholder Name'].split(' ')[0] }
+				{@const lastName = entry['Cardholder Name'].split(' ')[1].split('').map(() => '*').join('') }
 				<tr class="bg-zinc-50">
 					<td class="{cellStyle} !p-0">
 						<CreditCard name={entry['Type'].toLowerCase()}></CreditCard>
 					</td>
 					<td class="{cellStyle}">
 						<div class="{cellContainerStyle}">
-							Name: {entry['Cardholder Name']}
+							Name: {firstName} {lastName}
 							<br>city/zip: {entry['Country Code']}, {entry['State']}, {entry['City']},
 							<br>full_address: <span class="text-[green]">yes</span>
 							<br>phone: <span class="text-[green]">yes</span>
