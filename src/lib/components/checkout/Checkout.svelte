@@ -7,7 +7,7 @@
 	const { data } = $props();
 </script>
 
-<div class="p-6 grid gap-6 bg-linear-to-b from-blue-100 to-white to-5%">
+<div class="p-6 grid gap-6 bg-linear-to-b from-blue-200 to-blue-50 to-5%">
 	<Header></Header>
 	<hr class="border border-zinc-400 border-b-0">
 	<Nav></Nav>

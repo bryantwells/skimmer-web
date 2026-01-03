@@ -17,7 +17,7 @@
 	</header>
 	<table class="table-fixed w-full leading-none">
 		<thead class="">
-			<tr class="bg-zinc-100">
+			<tr class="bg-zinc-50">
 				<td class="{cellStyle} w-[10ch] font-bold">Type</td>
 				<td class="{cellStyle} font-bold">Person</td>
 				<td class="{cellStyle} font-bold">Object</td>
@@ -94,7 +94,7 @@
 		</tfoot>
 	</table>
 	<div class="p-4 ml-auto w-100 grid gap-4">
-		<table class="table-fixed w-full">
+		<table class="table-fixed w-full bg-zinc-50">
 			<tbody>
 				<tr>
 					<td class="{cellStyle} font-bold">Total Amount:</td>
