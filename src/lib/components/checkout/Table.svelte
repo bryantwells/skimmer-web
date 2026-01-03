@@ -27,10 +27,10 @@
 			</tr>
 		</thead>
 		<tbody>
-			{#each data as entry }
+			{#each data as entry, i }
 				{@const firstName = entry['Cardholder Name'].split(' ')[0] }
 				{@const lastName = entry['Cardholder Name'].split(' ')[1].split('').map(() => '*').join('') }
-				<tr class="bg-zinc-50">
+				<tr class="{ i % 2 ? 'bg-zinc-50' : '' }">
 					<td class="{cellStyle} !p-0">
 						<CreditCard name={entry['Type'].toLowerCase()}></CreditCard>
 					</td>
